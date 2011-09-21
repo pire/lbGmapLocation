@@ -28,6 +28,16 @@ h1 {
     font-size   : 16px;
 }
 
+h1 a {
+    color       : #336699;
+    font-size   : 12px;
+    text-decoration : none;
+}
+
+h1 a:hover {
+    text-decoration : underline;
+}
+
 h4 {
     color       : #999;
     font-size   : 14px;
