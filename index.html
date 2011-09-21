@@ -1,1 +1,35 @@
-My GitHub Page
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Google Maps v3 jQuery Autocomplete</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+    <script type="text/javascript" src="./js/jquery.lb-gmap-location.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#firstField').lbGmapLocation();
+            $('#secondField').lbGmapLocation({ showMap : false });
+        });
+    </script>
+    </head>
+    <body>
+        <div id="container" class="clearfix">
+            <h1><a href="https://github.com/pire/lbGmapLocation/">GMaps - jQuery Autocomplete Location</a></h1>
+
+            <h4>Without a map</h4>
+            <input type="text" size="50" id="secondField" name="second">
+    
+            <hr>
+    
+            <h4>With a map</h4>
+            <input type="text" size="50" id="firstField" name="first" placeholder="Enter a city or country name">
+            <input type="hidden" name="first-coordinates">
+
+        </div>
+    </body>
+</html>

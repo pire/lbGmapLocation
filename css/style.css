@@ -1,0 +1,56 @@
+.clearfix:after {
+    clear       : both;
+    content     : ".";
+    display     : block;
+    line-height : 0;
+    height      : 0;
+    visibility  : hidden;
+}
+ 
+.clearfix {
+/*    display     : inline-block;*/
+}
+ 
+html[xmlns] .clearfix {
+    display     : block;
+}
+ 
+* html .clearfix {
+    height      : 1%;
+}
+
+body {
+    background  : #efefef;
+}
+
+h1 {
+    color       : #888;
+    font-size   : 16px;
+}
+
+h4 {
+    color       : #999;
+    font-size   : 14px;
+}
+
+#firstField { float : left; }
+
+#container {
+    background  : #fff;
+    border      : solid 1px #999;
+    margin      : 100px auto 0;
+    padding     : 20px 20px 30px;
+    width       : 660px;
+}
+
+.map-container {
+    float       : right;
+}
+
+hr {
+    background  : none;
+    border      : solid 0px #999;
+    border-bottom-width: 1px;
+    clear       : both;
+    margin      : 30px 0 15px;
+}
