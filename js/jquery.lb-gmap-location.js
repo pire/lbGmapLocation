@@ -16,7 +16,7 @@
 
         var defaults = {
             showMap         : true,
-            mapTypes        : ['political', 'locality'],
+            mapTypes        : [],
             defaultMapZoom  : 17,
             mapClass        : 'map-container'
         }
